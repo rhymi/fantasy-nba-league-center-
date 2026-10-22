@@ -3,25 +3,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fantasy NBA League Center</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
-      line-height: 1.7;
+      line-height: 1.8;
     }
+
     main {
       max-width: 850px;
-      margin: 60px auto;
+      margin: 40px auto;
       padding: 35px;
     }
-    h1 { color: #38bdf8; font-size: 36px; }
-    h2 { color: #f8fafc; margin-top: 35px; }
-    p, li { color: #cbd5e1; }
+
+    h1 {
+      color: #38bdf8;
+      font-size: 36px;
+      line-height: 1.3;
+      margin: 20px 0;
+    }
+
+    h2 {
+      color: #f8fafc;
+      font-size: 23px;
+      margin: 0 0 18px;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin: 0 0 16px;
+      line-height: 1.9;
+    }
+
+    li {
+      color: #cbd5e1;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin: 15px 0 0;
+    }
+
+    section {
+      margin-top: 35px;
+      padding: 28px;
+      background: #1e293b;
+      border-radius: 12px;
+    }
+
     .tag {
       display: inline-block;
       padding: 6px 14px;
@@ -30,97 +69,224 @@
       color: #7dd3fc;
       font-size: 13px;
     }
-    .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 12px;
-      margin-top: 20px;
+
+    .overview-row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      border-bottom: 1px solid #334155;
+      gap: 8px;
     }
-    a { color: #38bdf8; }
+
+    .overview-row:last-child {
+      border-bottom: none;
+    }
+
+    .overview-row strong {
+      min-width: 160px;
+      color: #f8fafc;
+    }
+
+    .overview-row span {
+      color: #cbd5e1;
+    }
+
+    a {
+      color: #38bdf8;
+    }
+
     footer {
-      margin-top: 45px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #334155;
       color: #94a3b8;
       font-size: 13px;
     }
+
+    footer p {
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 20px;
+        margin: 15px auto;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .overview-row {
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
   </style>
 </head>
+
 <body>
-<main>
-  <span class="tag">Personal Project · MVP in Development</span>
+  <main>
 
-  <h1>Fantasy NBA League Center</h1>
+    <header>
+      <span class="tag">
+        Personal Project | MVP in Development
+      </span>
 
-  <p>
-    A private, non-commercial fantasy basketball
-    analytics dashboard designed for members of
-    Yahoo Fantasy NBA League #265273.
-  </p>
+      <h1>Fantasy NBA League Center</h1>
 
-  <div class="card">
-    <h2>Project Overview</h2>
-    <p><strong>Season:</strong> 2026–2027</p>
-    <p><strong>League ID:</strong> 265273</p>
-    <p><strong>Expected Users:</strong> 14</p>
-    <p><strong>Audience:</strong> Private league members only</p>
-    <p><strong>Commercial Use:</strong> None</p>
-    <p><strong>Status:</strong> MVP under development</p>
-  </div>
+      <p>
+        A private, non-commercial fantasy basketball
+        analytics dashboard designed for members of
+        Yahoo Fantasy NBA League #265273.
+      </p>
+    </header>
 
-  <h2>Planned Features</h2>
-  <ul>
-    <li>League standings and ranking changes</li>
-    <li>Weekly head-to-head matchup analysis</li>
-    <li>Fantasy team roster and player statistics</li>
-    <li>Category-based performance comparisons</li>
-    <li>Draft results and transaction history</li>
-    <li>Weekly MVP and team performance highlights</li>
-    <li>Korean-language league news and summaries</li>
-  </ul>
+    <section>
+      <h2>Project Overview</h2>
 
-  <h2>Yahoo Fantasy Sports API Usage</h2>
-  <p>
-    The application requests read-only access to
-    Yahoo Fantasy Sports data for a single private
-    NBA fantasy league.
-  </p>
-  <p>
-    Required data includes league settings, teams,
-    rosters, standings, scoreboards, player statistics,
-    draft results, and transactions.
-  </p>
-  <p>
-    Data will be retrieved through authorized OAuth
-    access and cached to reduce unnecessary requests.
-    No write operations, roster modifications, or
-    automated fantasy transactions are planned.
-  </p>
+      <div class="overview-row">
+        <strong>Season</strong>
+        <span>2026-2027</span>
+      </div>
 
-  <h2>Privacy and Access</h2>
-  <p>
-    The planned dashboard will be accessible only
-    to the 14 members of the private fantasy league.
-    Authentication credentials and API tokens will
-    not be publicly exposed.
-  </p>
-  <p>
-    This public page provides project information only.
-    It does not display private league data.
-  </p>
+      <div class="overview-row">
+        <strong>League ID</strong>
+        <span>265273</span>
+      </div>
 
-  <h2>Development Status</h2>
-  <p>
-    The project is currently in the MVP development
-    stage. Yahoo Fantasy Sports API access is being
-    requested to enable authorized data integration.
-  </p>
+      <div class="overview-row">
+        <strong>Expected Users</strong>
+        <span>14</span>
+      </div>
 
-  <footer>
-    Independent personal project · Non-commercial use
-    <p>
-      This project is not affiliated with or endorsed
-      by Yahoo.
-    </p>
-  </footer>
-</main>
+      <div class="overview-row">
+        <strong>Audience</strong>
+        <span>Private league members only</span>
+      </div>
+
+      <div class="overview-row">
+        <strong>Commercial Use</strong>
+        <span>None</span>
+      </div>
+
+      <div class="overview-row">
+        <strong>Development Status</strong>
+        <span>MVP in Development</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Planned Features</h2>
+
+      <ul>
+        <li>League standings and ranking changes</li>
+        <li>Weekly head-to-head matchup analysis</li>
+        <li>Fantasy team rosters and player statistics</li>
+        <li>Category-based performance comparisons</li>
+        <li>Draft results and transaction history</li>
+        <li>Weekly MVP and performance highlights</li>
+        <li>Korean-language league news and summaries</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Yahoo Fantasy Sports API Usage</h2>
+
+      <p>
+        The application requests read-only access to
+        Yahoo Fantasy Sports data for a single private
+        NBA fantasy league.
+      </p>
+
+      <p>
+        <strong>Required Data:</strong><br>
+        League settings, team information, rosters,
+        standings, weekly scoreboards, player statistics,
+        draft results, and transaction history.
+      </p>
+
+      <p>
+        <strong>Data Synchronization:</strong><br>
+        Data will be retrieved periodically using
+        authorized OAuth access.
+      </p>
+
+      <p>
+        <strong>Caching:</strong><br>
+        API responses will be cached to minimize
+        unnecessary requests and API traffic.
+      </p>
+
+      <p>
+        <strong>Access Scope:</strong><br>
+        Read-only access. No roster modifications,
+        automated transactions, or write operations
+        are planned.
+      </p>
+    </section>
+
+    <section>
+      <h2>Privacy and Access</h2>
+
+      <p>
+        The planned dashboard will be accessible only
+        to the 14 members of our private fantasy league.
+      </p>
+
+      <p>
+        Authentication credentials and OAuth tokens
+        will be securely stored and will not be
+        publicly exposed.
+      </p>
+
+      <p>
+        This public website is a project information
+        page only.<br>
+        It does not display private league data.
+      </p>
+    </section>
+
+    <section>
+      <h2>Development Status</h2>
+
+      <p>
+        The project is currently in the MVP
+        development stage.
+      </p>
+
+      <p>
+        Yahoo Fantasy Sports API access is being
+        requested to enable authorized data
+        integration.
+      </p>
+
+      <p>
+        Once approved, the application will provide
+        regularly updated league analytics and
+        Korean-language performance summaries
+        for our 14 league members.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Independent Personal Project<br>
+        Non-Commercial Use<br>
+        2026-2027 Fantasy NBA Season
+      </p>
+
+      <p>
+        This project is not affiliated with or
+        endorsed by Yahoo.
+      </p>
+    </footer>
+
+  </main>
 </body>
 </html>
