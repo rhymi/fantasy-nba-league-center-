@@ -1,0 +1,230 @@
+{
+  "leagueId": "265273",
+  "name": "SANGTOO",
+  "season": "2026–27",
+  "week": 2,
+  "source": "manual-screenshot",
+  "updatedAt": null,
+  "status": "not_started",
+  "scoringType": "head-to-head-categories",
+  "categories": [
+    "FG%",
+    "FT%",
+    "3PTM",
+    "3PT%",
+    "PTS",
+    "REB",
+    "AST",
+    "ST",
+    "BLK",
+    "TO"
+  ],
+  "settings": {
+    "maxTeams": 14,
+    "playoffTeams": 6,
+    "playoffWeeks": [
+      20,
+      21,
+      22
+    ],
+    "waiverDays": 2,
+    "weeklyAcquisitionLimit": 4,
+    "tradeDeadline": "2027-03-04",
+    "startScoringWeek": 2
+  },
+  "teams": [
+    {
+      "id": "1",
+      "name": "메드팩토",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "2",
+      "name": "Rhymi's Legendary Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "3",
+      "name": "해운대 부랑이",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "4",
+      "name": "tima's Outstanding Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "5",
+      "name": "Sunjin's Advanced Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "6",
+      "name": "HWANG-DAEIN-MVP",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "7",
+      "name": "NY knicks fan",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "8",
+      "name": "Twins",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "9",
+      "name": "남석's 덤벼덤벼",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "10",
+      "name": "king lebron james",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "11",
+      "name": "Samsung's Superb Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "12",
+      "name": "The’s Tip-Top Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "13",
+      "name": "Jayden's Boss Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    },
+    {
+      "id": "14",
+      "name": "SANGGU's Swell Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "manager": null,
+      "rank": null
+    }
+  ],
+  "matchups": [
+    {
+      "id": "w2-1",
+      "week": 2,
+      "teamA": "2",
+      "teamB": "7",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    },
+    {
+      "id": "w2-2",
+      "week": 2,
+      "teamA": "1",
+      "teamB": "13",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    },
+    {
+      "id": "w2-3",
+      "week": 2,
+      "teamA": "3",
+      "teamB": "5",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    },
+    {
+      "id": "w2-4",
+      "week": 2,
+      "teamA": "4",
+      "teamB": "8",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    },
+    {
+      "id": "w2-5",
+      "week": 2,
+      "teamA": "6",
+      "teamB": "10",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    },
+    {
+      "id": "w2-6",
+      "week": 2,
+      "teamA": "9",
+      "teamB": "12",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    },
+    {
+      "id": "w2-7",
+      "week": 2,
+      "teamA": "11",
+      "teamB": "14",
+      "status": "not_started",
+      "statsA": {},
+      "statsB": {}
+    }
+  ],
+  "transactions": [],
+  "players": []
+}
