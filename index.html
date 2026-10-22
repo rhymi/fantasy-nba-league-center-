@@ -1,29 +1,126 @@
-Project: Fantasy NBA League Center
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy NBA League Center</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 35px;
+    }
+    h1 { color: #38bdf8; font-size: 36px; }
+    h2 { color: #f8fafc; margin-top: 35px; }
+    p, li { color: #cbd5e1; }
+    .tag {
+      display: inline-block;
+      padding: 6px 14px;
+      background: #1e293b;
+      border-radius: 20px;
+      color: #7dd3fc;
+      font-size: 13px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    a { color: #38bdf8; }
+    footer {
+      margin-top: 45px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <span class="tag">Personal Project · MVP in Development</span>
 
+  <h1>Fantasy NBA League Center</h1>
 
-League: Yahoo Fantasy NBA #265273
+  <p>
+    A private, non-commercial fantasy basketball
+    analytics dashboard designed for members of
+    Yahoo Fantasy NBA League #265273.
+  </p>
 
+  <div class="card">
+    <h2>Project Overview</h2>
+    <p><strong>Season:</strong> 2026–2027</p>
+    <p><strong>League ID:</strong> 265273</p>
+    <p><strong>Expected Users:</strong> 14</p>
+    <p><strong>Audience:</strong> Private league members only</p>
+    <p><strong>Commercial Use:</strong> None</p>
+    <p><strong>Status:</strong> MVP under development</p>
+  </div>
 
+  <h2>Planned Features</h2>
+  <ul>
+    <li>League standings and ranking changes</li>
+    <li>Weekly head-to-head matchup analysis</li>
+    <li>Fantasy team roster and player statistics</li>
+    <li>Category-based performance comparisons</li>
+    <li>Draft results and transaction history</li>
+    <li>Weekly MVP and team performance highlights</li>
+    <li>Korean-language league news and summaries</li>
+  </ul>
 
-Users: 14 private league members
+  <h2>Yahoo Fantasy Sports API Usage</h2>
+  <p>
+    The application requests read-only access to
+    Yahoo Fantasy Sports data for a single private
+    NBA fantasy league.
+  </p>
+  <p>
+    Required data includes league settings, teams,
+    rosters, standings, scoreboards, player statistics,
+    draft results, and transactions.
+  </p>
+  <p>
+    Data will be retrieved through authorized OAuth
+    access and cached to reduce unnecessary requests.
+    No write operations, roster modifications, or
+    automated fantasy transactions are planned.
+  </p>
 
+  <h2>Privacy and Access</h2>
+  <p>
+    The planned dashboard will be accessible only
+    to the 14 members of the private fantasy league.
+    Authentication credentials and API tokens will
+    not be publicly exposed.
+  </p>
+  <p>
+    This public page provides project information only.
+    It does not display private league data.
+  </p>
 
+  <h2>Development Status</h2>
+  <p>
+    The project is currently in the MVP development
+    stage. Yahoo Fantasy Sports API access is being
+    requested to enable authorized data integration.
+  </p>
 
-Purpose: Korean-language fantasy basketball analytics dashboard
-
-
-
-Features: Standings, weekly matchups, roster analysis, player statistics, transactions, weekly summaries
-
-
-
-Status: MVP in development
-
-
-
-Access: Private league members only
-
-
-
-Commercial Use: None
+  <footer>
+    Independent personal project · Non-commercial use
+    <p>
+      This project is not affiliated with or endorsed
+      by Yahoo.
+    </p>
+  </footer>
+</main>
+</body>
+</html>
